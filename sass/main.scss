@@ -1,0 +1,58 @@
+@use './index';
+@use './header';
+@use './cards';
+@use './footer';  
+@use './local';
+@use './FAQs';
+@use './contact';
+
+// Variables
+$fondo-principal: rgb(255, 255, 255);
+$letra-principal: 'Roboto', sans-serif;
+$color-principal: rgb(9, 10, 9);
+$scroll: smooth;
+$size-featured: 50px;
+$letra-secundaria: 'Open Sans', sans-serif;
+
+
+body{
+    background-color: $fondo-principal;
+    font-family: $letra-principal;
+    color: $color-principal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*los elementos no se salen del contenedor*/
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: $scroll;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    font-family: $letra-secundaria;
+    font-weight: 700;
+}
+
+
+.main-titles{
+    font-size: 23px;
+    line-height: 60px;
+
+    margin-top: 140px;
+    text-align: center;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.title-featured{
+    font-size: $size-featured;
+    text-align: center;
+    
+}

@@ -1,0 +1,79 @@
+//Variables
+$letra-header: 'Poppins', sans-serif;
+$main-color: #8aecf3;
+
+.logo-img{
+    filter: invert(1);
+    height: 40px;
+    margin: 10px 0;
+}
+
+.banner-image{
+    background-image: url(../img/slider1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.navbar-toggler{
+    filter: invert(1);
+    border: none;
+}
+.navbar-collapse{
+    color: #000000;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.utilities-container{
+    margin-top: -2px;
+}
+
+.text-banner{
+    margin-top: 400px;
+    font-size: 100px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media (max-width: 854px){
+    .text-banner{
+        visibility: hidden;
+    }
+}
+
+.navbar-nav{
+    margin-right: 10px;
+}
+
+.nav-item{
+    display: inline-block;
+    line-height: 10px;
+    margin: 0 10px;
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+    font-family: $letra-header;
+    font-size: 16px;
+    padding: 15px 13px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+
+    font-weight: bold;
+    color: $main-color;
+    transition: .5s;
+}
+
+.nav-link.active{
+
+    color: #080808!important;
+    font-weight: bold;
+    transition: .5s;
+}

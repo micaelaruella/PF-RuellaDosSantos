@@ -1,0 +1,86 @@
+
+/*css for card-items*/
+
+#shop-container{
+    text-align: center!important;
+}
+
+.item{
+    max-width: 100%;
+    align-items: center;
+    margin-bottom: 1.5rem !important;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgba(240, 240, 240, 0.58);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+
+.item:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%); /*mueve en la linea Y*/
+}
+
+.item img{
+    width: 350px;
+    height: 400px;
+    background-position: center center;
+}
+
+.contenido-item{
+    text-align: center;
+    padding: 15px;
+    font-family: "Rubik",sans-serif;
+}
+
+.nombre-item{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: large;
+    margin: 5px;
+}
+
+.precio-item{
+    font-weight: bold;
+    font-size: 20px;
+    color: #5fe1b6;
+}
+
+.negrita{
+    font-weight: bold;
+    color: #000000;
+}
+
+#button-product body{
+    background-color: #eee;
+}
+
+#button-product{
+    margin: 30px 0;
+    text-align: center;
+}
+
+#button-product button{
+    background-color: transparent;
+    color: #444;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #ccc, 
+    -.5rem -.5rem 1rem #fff;
+}
+
+#button-product button:hover{
+    box-shadow: .5rem .5rem 1rem #fff, 
+    -.5rem -.5rem 1rem #ccc;
+}
+
+#button-product button.active{
+    box-shadow: inset .2rem .2rem 1rem #ccc, 
+    inset -.2rem -.2rem 1rem #ccc;
+}
