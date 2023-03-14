@@ -5,6 +5,7 @@
 @use './local';
 @use './FAQs';
 @use './contact';
+@use './sizes';
 
 // Variables
 $fondo-principal: rgb(255, 255, 255);
@@ -42,7 +43,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
 .main-titles{
     font-size: 23px;
     line-height: 60px;
-
+    padding-bottom: 30px;
     margin-top: 140px;
     text-align: center;
 }
@@ -54,5 +55,5 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
 .title-featured{
     font-size: $size-featured;
     text-align: center;
-    
+    padding: 30px;
 }

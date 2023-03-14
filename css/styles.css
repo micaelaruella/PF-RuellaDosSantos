@@ -91,7 +91,7 @@
 }
 
 .col i {
-  margin: 25px;
+  margin: 29px;
 }
 
 .instafeed-title-user {
@@ -186,24 +186,23 @@
 }
 
 /*css for card-items*/
-#shop-container {
-  text-align: center !important;
-}
-
 .item {
   max-width: 100%;
-  align-items: center;
-  margin-bottom: 1.5rem !important;
+  width: 300px;
+  height: 550px;
   border-radius: 6px;
   overflow: hidden;
   background: rgba(240, 240, 240, 0.58);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
+  cursor: pointer;
   transition: all 400ms ease;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .item:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.08);
   transform: translateY(-3%); /*mueve en la linea Y*/
 }
 
@@ -266,29 +265,90 @@
   box-shadow: inset 0.2rem 0.2rem 1rem #ccc, inset -0.2rem -0.2rem 1rem #ccc;
 }
 
+@media (max-width: 600px) {
+  .item {
+    margin-left: 80px;
+  }
+}
 /*css for footer*/
-footer {
-  background-color: #222;
-  padding: 3rem;
-  color: white;
+#footer body {
+  height: 100vh;
+  width: 100%;
 }
 
-footer section {
-  float: right;
+#footer {
+  padding: 2rem 8%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*  poner footer abajo */
+  clear: both;
 }
 
-footer p {
-  margin: 0;
+.iconos, .footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
-footer a {
-  transition: color 0.3s ease;
-  color: white;
+.social-icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  border: 0.1rem;
+  background-image: url(../icons/wsp.svg);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+.social-icon:hover {
+  cursor: pointer;
+}
+
+.social-icon:nth-of-type(2) {
+  background-image: url(../icons/instagram.svg);
+}
+
+.social-icon:nth-of-type(3) {
+  background-image: url(../icons/telefono.svg);
+}
+
+.social-icon:nth-of-type(4) {
+  background-image: url(../icons/mail.svg);
+}
+
+.social-icon:nth-of-type(5) {
+  background-image: url(../icons/ubicacion.svg);
+}
+
+.footer-menu-container {
+  list-style-type: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.menu-item {
+  color: #000000;
   text-decoration: none;
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
 }
 
-footer a:hover {
-  color: cornflowerblue;
+.menu-item:hover {
+  opacity: 1;
+}
+
+.copyright {
+  color: #000000;
+  opacity: 0.3;
+  text-align: center;
 }
 
 /*css for local*/
@@ -360,6 +420,67 @@ footer a:hover {
   text-transform: uppercase;
 }
 
+.container-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  height: 80%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;
+  border-radius: 10px;
+}
+
+.input-contact, .textarea-contact {
+  border: none;
+  resize: none;
+  outline: none;
+  padding: 15px 0px;
+  width: 80%;
+  margin: 30px;
+  transition: all 300ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.input-contact:focus, .textarea-contact:focus {
+  border-bottom-color: #610061;
+}
+
+.button-contact {
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgb(133, 213, 233)), color-stop(17%, rgba(103, 180, 242, 0.5)), color-stop(50%, rgba(61, 104, 173, 0.5)), color-stop(100%, rgba(37, 59, 111, 0.5)));
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.button-contact:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
+}
+
+.tabla-talles img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.tabla-talles p {
+  line-height: 22px;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
@@ -386,6 +507,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .main-titles {
   font-size: 23px;
   line-height: 60px;
+  padding-bottom: 30px;
   margin-top: 140px;
   text-align: center;
 }
@@ -397,6 +519,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .title-featured {
   font-size: 50px;
   text-align: center;
+  padding: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

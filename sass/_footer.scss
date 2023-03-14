@@ -1,24 +1,87 @@
+//Variables
+$main-color: #8aecf324;
+
 /*css for footer*/
-footer{
-    background-color: #222;
-    padding: 3rem;
-    color: white;
+
+#footer body{
+    height: 100vh;
+    width: 100%;
 }
 
-footer section{
-    float: right;
+#footer{
+    padding: 2rem 8%;
+    background-color: rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /*  poner footer abajo */
+    clear: both;
 }
 
-footer p{
-    margin: 0;
+.iconos, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
-footer a{
-    transition: color 0.3s ease;
-    color: white;
+.social-icon{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    border: 0.1rem;
+    background-image: url(../icons/wsp.svg);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    cursor: pointer;
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(../icons/instagram.svg);
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url(../icons/telefono.svg);
+}
+
+.social-icon:nth-of-type(4){
+    background-image: url(../icons/mail.svg);
+}
+
+.social-icon:nth-of-type(5) {
+    background-image: url(../icons/ubicacion.svg);
+  }
+  
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+.menu-item{
+    color: #000000;
+
     text-decoration: none;
+    margin:  1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
 }
 
-footer a:hover{
-    color: cornflowerblue;
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #000000;
+    opacity: 0.3;
+    text-align: center;
 }
