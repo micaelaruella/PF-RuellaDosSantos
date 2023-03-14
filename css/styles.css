@@ -196,10 +196,17 @@
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 400ms ease;
+  display: inline-block;
   text-align: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
+@media (max-width: 450px) {
+  .item {
+    margin-left: 50px;
+  }
+}
 .item:hover {
   text-align: center;
   box-shadow: 0 0 10px rgba(1, 1, 1, 0.08);
@@ -265,11 +272,6 @@
   box-shadow: inset 0.2rem 0.2rem 1rem #ccc, inset -0.2rem -0.2rem 1rem #ccc;
 }
 
-@media (max-width: 450px) {
-  .item {
-    margin-left: 45px;
-  }
-}
 /*css for footer*/
 #footer body {
   height: 100vh;
