@@ -55,7 +55,7 @@ $main-color: #8aecf3;
     }
     
     .iframe{ 
-        min-width: 50vw;
+        min-width: 40vw;
         padding: 20px;
     }
     
@@ -67,5 +67,11 @@ $main-color: #8aecf3;
     
     .leyend{
         margin: 50px;
+    }
+}
+
+@media (max-width: 535px) {
+    #img-ubication{
+        margin-right: 40px;
     }
 }

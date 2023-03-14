@@ -400,7 +400,7 @@
     max-width: 100%;
   }
   .iframe {
-    min-width: 50vw;
+    min-width: 40vw;
     padding: 20px;
   }
   .direction {
@@ -410,6 +410,11 @@
   }
   .leyend {
     margin: 50px;
+  }
+}
+@media (max-width: 535px) {
+  #img-ubication {
+    margin-right: 40px;
   }
 }
 /*css for FAQs*/
